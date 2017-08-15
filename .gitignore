@@ -1,5 +1,8 @@
 #vocabularies
 *.txt
+#mata
+*.meta*
+*.idea/
 #che__/
 *.py[cod]
 *$py.class
