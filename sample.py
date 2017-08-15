@@ -36,6 +36,11 @@ flags.DEFINE_string('config_file', 'config.ini', 'Path to configuration file.')
 
 
 def main():
+
+    with open('data/obscene_corpus.txt', 'r') as f:
+        for mat in f:	
+            new_token[mat.lower()] = 'плохой'
+
     vocab_mapping = util.vocabmapping.VocabMapping()
     tokenizer = twittertokenizer.TweetTokenizer(preserve_case=False)
     with tf.Session() as sess:

@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.python.ops import rnn, rnn_cell, seq2seq
+from tensorflow.python.ops import rnn, rnn_cell#, seq2seq
 import numpy as np
 
 
